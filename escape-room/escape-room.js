@@ -1,9 +1,7 @@
 const readline = require("readline-sync");
 const name = readline.question("What is your name? ");
 
-var readlineSync = require('readline-sync');
-
-//function with all avail choice for user
+//function with all available choices for user
 
 function userChoiceMenu()
 
@@ -23,15 +21,15 @@ function startGame()
 
     // Wait for user's response.
 
-    var userName = readlineSync.question('May I Know your name: ');
+    var userName = readline.question('What is your name?: ');
 
     console.log('Hi ' + userName + '!');
 
-    console.log('WELCOME TO THE GAME');
+    console.log('WELCOME TO THE ESCAPE ROOM');
 
     console.log("===================\n")
 
-    //variable to stroe the value if key found
+    //variable to store the value if key found
 
     let isKeyFound = false;
 
@@ -41,7 +39,7 @@ function startGame()
 
         userChoiceMenu();
 
-        var userChoice = readlineSync.question('Enter your choice: ');
+        var userChoice = readline.question('Enter your choice: ');
 
         if (!Number(userChoice) || Number(userChoice) < 1 || Number(userChoice) > 3)
 
